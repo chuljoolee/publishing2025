@@ -88,7 +88,7 @@ input[type="image"] {vertical-align:top;}
 /* 메인 개선*/
 .visual.main-new-visual{position:relative; }
 .visual-inner {
-  width: 1760px;
+  max-width: 1760px;
   height: 802px;
   margin: 0 auto;
   position: relative;
@@ -937,7 +937,8 @@ background: #D9D9D9;
 }
 .contbox-full-gray-ty3 .bg-box {
   position: absolute;
-  top:0; left:0;
+  top:0; left:50%;
+  transform: translateX(-50%);
   width: 100%;
   height: 353px;
   background: url('../images/main-renewal/img-bg-boost.png') lightgray -2.655px -65.946px / 100.043% 117.954% no-repeat;
