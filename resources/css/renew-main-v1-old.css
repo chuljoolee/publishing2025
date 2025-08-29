@@ -1,0 +1,298 @@
+/*fonts*/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+
+#wrapper {
+  min-width: 1760px;
+}
+
+.main {
+   font-family: "Pretendard", sans-serif;;
+}
+
+.header-wrap {
+  width: 100%;
+  min-width: 1760px;
+  
+}
+
+.header-wrap.header-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    transition: all 0.3s;
+}
+.header-wrap.header-fixed {
+    z-index: 97;
+}
+
+.header-wrap .header-inner {
+  max-width: 1760px;
+  margin: 0 auto ;
+  background: transparent;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+/* CSS */
+
+/* 상단 GNB 컨테이너 */
+.header-wrap {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* 로고 */
+.header-wrap .logo {
+  margin-right: 175px;
+}
+.header-wrap .logo a{
+  display: block;
+}
+.header-wrap .logo img {
+  width: 178px;
+  height: 42px;
+}
+
+/* 우측 메뉴 (로그인, 회원가입) */
+.util-menu {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.util-menu a {
+  color: #464646;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.util-menu a:hover {
+  color: #000;
+}
+
+/* GNB 메뉴 */
+.gnb {
+  font-size: 16px;
+  background-color: transparent;
+  display: flex;
+  
+}
+
+.gnb ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gnb > ul.depth1 {
+  display: flex;
+  gap: 48px;
+}
+
+.gnb > ul.depth1 > li {
+  /*position: relative;*/
+}
+.gnb > ul.depth1 > li.dep1 {
+  width: 148px;
+}
+
+.gnb > ul.depth1 > li > a {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  /*width: 148px;height: 20px;*/
+  
+  /*padding: 34px 0;*/
+  position: relative;
+}
+.gnb > ul.depth1 > li > a.cur + .depth2 {
+  display: block;
+}
+.gnb > ul.depth1 > li > a span {
+  position: relative;
+  display: inline-block;
+  line-height: 88px;
+}
+.gnb > ul.depth1 > li > a span::after {
+  content: '';
+  clear: both;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left:0;
+  width: 100%;
+  background-color: #F15C22;
+}
+.gnb > ul.depth1 > li > a:hover span::after {
+  height: 4px;
+}
+
+.gnb > ul.depth1 > li > a.act  span::after {
+   height: 4px;
+}
+
+.gnb a {
+  display: block;
+  padding: 0px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+/*color: #e35b18;*/
+.gnb > ul.depth1 > li:hover > a {
+  
+}
+  /*margin-left: -243px;*/
+.gnb .depth2 {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width: 1548px;
+  display: inline-flex;
+  padding: 48px 0px 80px 0px;
+  align-items: flex-start;
+  gap: 64px;
+  margin-left: -113px;
+  display: none;
+}
+.gnb .depth2 .dep2-inner {
+  display: inline-flex;
+   align-items: flex-start;
+  gap: 64px;
+}
+.gnb .depth2 .dep2-inner > .imgs {
+  width: 296px;
+  height: 196px;
+}
+.gnb .depth2 .dep2-inner > .imgs .img {
+  width: 296px;
+  height: 196px;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 6px;
+}
+.gnb .depth2 .dep2-inner > .imgs img {
+  width: 296px;
+  height: 196px;
+}
+.gnb .depth2 .dep2 {
+  display: flex;
+  max-width: 376px;
+  /* width: 296px;*/
+  width: 294px;
+  /*height: 56px;*/
+  padding: 16px 40px;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #DDD;
+
+  color: #464646;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  position: relative;
+}
+.gnb .depth2 .dep2 .dep2-menu {
+  flex: 1;
+  display: flex;
+
+}
+.gnb .depth2 .dep2 .icon-arr {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+.gnb .depth2 .dep2 .icon-arr {}
+.gnb .depth2 ul.dep2-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.gnb .depth2 ul.dep2-ul li {
+  position: relative;
+}
+
+.gnb .depth2 > li,
+.gnb .depth3 > li {
+}
+
+.gnb .depth3 {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 40px 0 40px;
+  gap: 20px;
+}
+.gnb .depth3 li > a.dep3 {
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  /*-webkit-transition: all 1s;-o-transition: all 1s;transition: all 1s;*/
+  position: relative;
+  /*??*/
+  padding-left: 10px;
+}
+.gnb .depth3 li > a.dep3::before {
+
+}
+.gnb .depth3 li > a.dep3:hover {
+  /*margin-left: 10px;*/
+  padding-left: 10px;
+  color: #F15C22;
+}
+
+.gnb .depth3 li > a.dep3::before {
+  content: '';
+  clear: both;
+  display: block;
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  /*??*/
+  width: 5px;
+  height: 5px;
+  background-color: #464646;
+}
+
+.gnb .depth3 li a.dep3:hover::before {
+  width: 5px;
+  height: 5px;
+  background-color: #F15C22;
+}
+
+
+.gnb li.active > .depth2,
+.gnb li.active > .depth3 {
+  display: block;
+}
+
+.gnb .depth2 .dep2:hover {
+  background: #F15C22;;
+  color: #fff;
+}
+.gnb .depth2 .dep2 .icon-arr {
+  background: url('../images/common/img-depth2-arr.png');
+}
+.gnb .depth2 .dep2:hover .icon-arr {
+  background: url('../images/common/img-depth2-arr-on.png');
+}
+
+.gnb .depth2 a.dep2:hover
+.gnb .depth3 a.dep3:hover {
+
+}
+

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 행복네트워크 운영사업 - 복지센터 */
+.content_wrapper ul.network {position:relative;width:880px;font-size:13px;color:#777;}
+.content_wrapper ul.network:after {content:'';display:block;clear:both;}
+.content_wrapper ul.network > li {float:left;width:440px;height:100%;}
+.content_wrapper ul.network > li > a {display:block;height:32px;margin-bottom:34px;padding-top:13px;text-align:center;color:#777;font-family:NanumGothicBold, NanumGothic, sans-serif;background:url('/rs/images/biz/bg_tab_network.png') 0 0 no-repeat;cursor:pointer;} /* 140730 h */
+.content_wrapper ul.network > li > a.on {background-position:0 -46px;color:white;}
+.content_wrapper ul.network > li > div.text {display:none;position:relative;left:-440px;width:880px;}
+.content_wrapper ul.network > li:first-child .text {display:block;left:0;}
+.content_wrapper ul.privit_wrap {display:inline-block;width:880px;height:100%;margin-bottom:40px;font-size:13px;}
+.content_wrapper ul.privit_wrap > li {float:left;width:175px;height:223px;background:white;border-right:1px solid #E8E7E4;border-bottom:1px solid #E8E7E4;line-height:18px;color:#666;}
+.content_wrapper ul.privit_wrap > li:first-child {width:174px;border-left:1px solid #E8E7E4;}
+.content_wrapper ul.privit_wrap > li+li+li+li+li {background:white;}
+.content_wrapper ul.privit_wrap dt {height:27px;padding-top:13px;text-align:center;background:#E9E9E9 url('/rs/images/biz/bar_table_title.gif') 100% 50% no-repeat;color:#555;}
+.content_wrapper ul.privit_wrap dt.none_bar {background:#E9E9E9;}
+.content_wrapper ul.privit_wrap dd > ul {padding:15px 0 0 10px;}
+.content_wrapper ul.privit_wrap dd > ul > li {padding:0 0 8px 8px;background:url('/rs/images/biz/icon_list_gray_dot.gif') 0 7px no-repeat;}
+.content_wrapper ul.privit_wrap.area > li {width:124px;height:246px;}
+.content_wrapper .diagram_wrap {width:100%;margin-bottom:70px;text-indent:-9999px;}
+.content_wrapper .network1 {height:266px;background:url('/rs/images/biz/network_diagram1.jpg') no-repeat;}
+.content_wrapper .network2 {height:209px;background:url('/rs/images/biz/network_diagram2.jpg') no-repeat;}
+.content_wrapper ul.center_address > li {float:left;width:420px;}
+.content_wrapper ul.center_address > li:first-child {margin-right:40px;}
+.content_wrapper ul.center_address dt {height:26px;padding:12px 0 0 17px;background:#F4F2EC;border-top:2px solid #E4DFD1;font-size:13px;font-family:NanumGothicBold, NanumGothic, sans-serif;line-height:13px;color:#222;}
+.content_wrapper ul.center_address dd {height:133px;padding:12px 0 10px 15px;}
+.content_wrapper ul.center_address dd > ul > li {padding:0 0 5px 8px;background:url('/rs/images/biz/icon_list_gray_dot.gif') 0 7px no-repeat;line-height:18px;color:#666;}
+.content_wrapper .center_address span {display:block;}
+.content_wrapper .center_address span.addr1_wrap {padding-left:72px;}
+.content_wrapper .center_address span.addr2_wrap {padding-left:61px;}
+.content_wrapper .center_address .btn_orange a {display:block;width:200px;height:26px;padding-top:14px;text-align:center;background:#F8981D;font-size:15px;color:white;}
+
+/* 행복네트워크 운영사업 - 자원봉사센터 */
+.content_wrapper .volunteer_wrap {overflow:hidden;}
+.content_wrapper .volunteer_wrap li {float:left;width:420px;}
+.content_wrapper .volunteer_wrap li:first-child {margin-right:40px;}
+.content_wrapper .volunteer_wrap img {margin-bottom:15px;}
+.content_wrapper .volunteer_wrap a.btn_orange {display:block;width:185px;height:24px;padding-top:14px;text-align:center;background:#F8981D;font-size:13px;font-family:NanumGothicBold, NanumGothic, sans-serif;color:white;}
+.content_wrapper .volunteer_wrap li > p {display:block;height:123px;padding-top:10px;line-height:20px;color:#555;}
+
+/* 사회복지 지원사업 - 사회복지 사업안내 */
+.content_wrapper ul.society {width:880px;height:39px;border-bottom:1px solid #AAA;font-size:13px;color:#656565;}
+.content_wrapper ul.society > li {float:left;background:white;}
+.content_wrapper ul.society > li > a {display:block;height:25px;padding:13px 30px 0 30px;text-align:center;border-top:1px solid #AAA;border-right:1px solid #AAA;color:#666;cursor:pointer;}
+.content_wrapper ul.society > li.on a {background:#FFA300;border-top:1px solid #FFA300;border-left:1px solid #FFA300;border-right:none;color:white;}
+
