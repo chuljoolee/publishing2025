@@ -16,44 +16,30 @@ $(function(){
 		}
 			lastScrollTop=sct;
 	});
-
 });
 
+//✅ JS (스크롤 위치 저장 + 복원) v1
+let scrollPosition = 0;
+
 $(document).ready(function(){
-  //v1
+
+  /** 햄버거 버튼 클릭 → 전체메뉴 열기 */
   $('.allmenu-js').on('click', function(){
-    $('.all-menu').addClass('--show');
-    $('body').addClass('no-scroll');  // 스크롤 막기
-  });
-
-  $('#btnCloseJs').on('click', function(){
-    $('.all-menu').removeClass('--show');
-    $('body').removeClass('no-scroll'); // 스크롤 해제
-  });
-  /*
-
-  */
-
-  //v2
-  /*
-  let scrollY = 0;
-
-  $('.allmenu-js').on('click', function(){
-    scrollY = window.scrollY; // 현재 스크롤 위치 저장
+    scrollPosition = $(window).scrollTop(); // 현재 스크롤 위치 저장
     $('body').addClass('no-scroll').css({
-      top: -scrollY + 'px'
+      top: -scrollPosition + 'px'
     });
     $('.all-menu').addClass('--show');
   });
 
+  /** 닫기 버튼 클릭 → 전체메뉴 닫기 */
   $('#btnCloseJs').on('click', function(){
     $('body').removeClass('no-scroll').css({
       top: ''
     });
     $('.all-menu').removeClass('--show');
-    window.scrollTo(0, scrollY); // 원래 위치 복원
+    $(window).scrollTop(scrollPosition); // 원래 위치 복원
   });
-  */
 
 });
 

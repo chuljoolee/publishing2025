@@ -16,28 +16,13 @@ $(function(){
 		}
 			lastScrollTop=sct;
 	});
-
 });
 
 $(document).ready(function(){
-  //v1
-  $('.allmenu-js').on('click', function(){
-    $('.all-menu').addClass('--show');
-    $('body').addClass('no-scroll');  // 스크롤 막기
-  });
 
-  $('#btnCloseJs').on('click', function(){
-    $('.all-menu').removeClass('--show');
-    $('body').removeClass('no-scroll'); // 스크롤 해제
-  });
-  /*
-
-  */
-
-  //v2
-  /*
   let scrollY = 0;
 
+  /** 전체메뉴 열기 */
   $('.allmenu-js').on('click', function(){
     scrollY = window.scrollY; // 현재 스크롤 위치 저장
     $('body').addClass('no-scroll').css({
@@ -46,6 +31,7 @@ $(document).ready(function(){
     $('.all-menu').addClass('--show');
   });
 
+  /** 전체메뉴 닫기 */
   $('#btnCloseJs').on('click', function(){
     $('body').removeClass('no-scroll').css({
       top: ''
@@ -53,7 +39,6 @@ $(document).ready(function(){
     $('.all-menu').removeClass('--show');
     window.scrollTo(0, scrollY); // 원래 위치 복원
   });
-  */
 
 });
 
