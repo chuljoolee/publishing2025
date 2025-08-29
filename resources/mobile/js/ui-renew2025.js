@@ -20,11 +20,13 @@ $(function(){
   /** 햄버거 버튼 클릭 → 전체메뉴 열기 */
   $('.allmenu-js').on('click', function(){
     $('.all-menu').addClass('--show');
+    $('body').addClass('no-scroll');  // 스크롤 막기
   });
 
   /** 닫기 버튼 클릭 → 전체메뉴 닫기 */
   $('#btnCloseJs').on('click', function(){
     $('.all-menu').removeClass('--show');
+    $('body').removeClass('no-scroll'); // 스크롤 해제
   });
 
 });

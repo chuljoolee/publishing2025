@@ -468,6 +468,13 @@ header .navi-inner .logo-area .logo {
   height: 100%;
   background-color: #fff;
 }
+
+body.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
 /*width: 90%;*//*left: 84%;*/
 .all-menu {
   position: fixed;
