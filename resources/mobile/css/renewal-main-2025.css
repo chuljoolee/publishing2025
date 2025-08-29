@@ -841,8 +841,11 @@ background: #D9D9D9;
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none; /* 기본적으로 터치 막기 */
 }
-
+.youtube-inner.playing iframe {
+  pointer-events: auto; /* 재생 버튼 누른 경우만 허용 */
+}
 .main-swiper .swiper-pagination {
   position: static;
   width: 100%;

@@ -29,7 +29,9 @@
 
 <link rel="stylesheet" href="../../../resources/mobile/css/renewal-contents-2025.css">
 <link rel="stylesheet" href="../../../resources/mobile/css/renewal-main-2025.css">
-<!--// 메인 리뉴얼 추가 -->
+<!--// 메인 리뉴얼 추가 
+https://codepen.io/kimyangsun/pen/ExReqVy
+-->
 
 </head>
 <body>
@@ -549,11 +551,30 @@
     // autoplay: {
     //     delay: 3000,
     // }, 
+    simulateTouch: true,         // PC에서 마우스 드래그도 허용
+    touchRatio: 1,               // 터치 감도 (기본값 1)
+    touchAngle: 45,              // 허용 터치 각도
+    shortSwipes: true,           // 짧은 스와이프 허용
+    // longSwipes: true,            // 긴 스와이프 허용
+    // longSwipesRatio: 0.5,        // 긴 스와이프 판단 기준
+    // longSwipesMs: 300,           // 긴 스와이프 인식 시간
+    threshold: 20,               // 터치 감도 (px)
+    touchEventsTarget: 'wrapper',  // ← 이거 추가
     pagination: {
       el: '.swiper-pagination',
       clickable: true, // 페이징 버튼 클릭 가능
     },
   });
+  document.querySelectorAll('.youtube-inner').forEach(function(el){
+    el.addEventListener('click', function(){
+      // 클릭하면 iframe 터치 허용 (재생 가능)
+      el.classList.add('playing');
+    });
+  });
+  /*
+  iframe 요소는 자체적으로 터치 이벤트(스크롤, 드래그)를 가로채 버립니다.
+  그래서 사용자가 화면을 스와이프하면 Swiper에 전달되지 않고, iframe이 먼저 이벤트를 잡아버려 슬라이드가 안 되는 거예요.
+  */
 
   mainSwiper.on('slideChange', function() {
     players.forEach((player, i) => {
