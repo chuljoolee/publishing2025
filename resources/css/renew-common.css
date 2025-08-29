@@ -3,7 +3,7 @@
 
 
 #wrapper {
-  min-width: 1760px;
+  min-width: 1440px;
 }
 
 /*
@@ -11,9 +11,9 @@
    font-family: "Pretendard", sans-serif;
 }
 */
-
+/*min-width: 1760px;*/
 .header-wrap {
-  min-width: 1760px;
+  min-width: 1440px;
   /*padding: 0 80px;*/
   position: relative;
   z-index: 2;

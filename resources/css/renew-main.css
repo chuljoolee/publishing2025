@@ -60,9 +60,9 @@ input[type="image"] {vertical-align:top;}
  #skipNav a:hover,#skipNav a:focus,#skipNav a:active{
      display:block;height:auto;padding:10px 0; background:none repeat scroll 0 0 #666;}
 
-
+/*min-width: 1760px;*/
 #wrapper {
-  min-width: 1760px;
+  min-width: 1440px;
   overflow: hidden;
 }
 
@@ -86,6 +86,9 @@ input[type="image"] {vertical-align:top;}
 
 
 /* 메인 개선*/
+.visual {
+  width: 100%;
+}
 .visual.main-new-visual{position:relative; }
 .visual-inner {
   max-width: 1760px;
