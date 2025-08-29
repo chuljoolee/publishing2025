@@ -63,6 +63,7 @@ input[type="image"] {vertical-align:top;}
 
 #wrapper {
   min-width: 1760px;
+  overflow: hidden;
 }
 
 .main {
