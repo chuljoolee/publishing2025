@@ -165,25 +165,13 @@ button::-ms-focus-inner {
 }
 
 /* COMMON */
-/*
-#wrapper{
-    overflow-x: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 640px;
-    margin: 0 auto;
+#wrapper {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
 }
-
-.section{
-    position:relative;
-}
-.inner{
-    padding:0 17px;
-    box-sizing: border-box;
-}
-*/
-
-
 
 /*공통*/
 #container {
