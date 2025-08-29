@@ -468,18 +468,13 @@ header .navi-inner .logo-area .logo {
   height: 100%;
   background-color: #fff;
 }
-.all-menu {
-  background-color: #000;
-}
-
+/*width: 90%;*//*left: 84%;*/
 .all-menu {
   position: fixed;
   top: 0;
-  /*left: 84%;*/
   right: -100%;
   width: 84%;
   z-index: 99999;
-  width: 90%;
   height: 100vh;
   background: #fff;
   -webkit-transition: all 0.3s;
@@ -488,6 +483,7 @@ header .navi-inner .logo-area .logo {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 100;
+  background-color: #000;
 }
 /*left: 0;*/
 .all-menu.--show {
