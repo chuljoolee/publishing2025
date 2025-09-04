@@ -889,8 +889,8 @@ footer .familysite-box ul li:last-child a:after{
 .form-lable input[type="checkbox"] + label * {line-height:24px;}
 .form-lable input[type="radio"]:first-child + label,
 .form-lable input[type="checkbox"]:first-child + label {margin-left:0;}
-.form-lable input[type="radio"] + label span{display:inline-block;position:absolute;top:1px;left:0;width:24px;height:24px;vertical-align:middle;background:url('../images/form/btn_radio_off.png') no-repeat;background-size:contain;cursor:pointer;}
-.form-lable input[type="checkbox"] + label span{display:inline-block;position:absolute;top:0;left:0;width:24px;height:24px;vertical-align:middle;background:url('../images/form/btn_chk_off.png') no-repeat;background-size:contain;cursor:pointer;}
+.form-lable input[type="radio"] + label span{display:inline-block;position:absolute;top:1px;left:0;width:24px;height:24px;vertical-align:middle;background:url('../images/form/btn_radio_off.png') no-repeat;background-size:contain;cursor:pointer;transition: all .3s;}
+.form-lable input[type="checkbox"] + label span{display:inline-block;position:absolute;top:0;left:0;width:24px;height:24px;vertical-align:middle;background:url('../images/form/btn_chk_off.png') no-repeat;background-size:contain;cursor:pointer;transition: all .3s;}
 .form-lable input[type="radio"]:checked + label span {background:url('../images/form/btn_radio_on.png') no-repeat; background-size:contain;}
 .form-lable input[type="radio"]:disabled + label span {background:url('../images/form/btn_radio_off.png') no-repeat; background-size:contain;}
 .form-lable input[type="checkbox"] + label span {background:url('../images/form/btn_chk_off.png') no-repeat; background-size:contain; }
