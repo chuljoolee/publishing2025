@@ -285,7 +285,7 @@ input[type="image"] {vertical-align:top;}
   display: block;
   border-radius: 16px;
   border: 1px solid #D9D9D9;
-  /*background: #F5F5F5;*/
+  background: #F5F5F5;
   padding: 0 50px;
   position: relative;
 }

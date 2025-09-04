@@ -770,7 +770,7 @@ top: 56px;
   padding: 10px 0 0;
 }
 .form-conts .form-lable.first {
-  padding: 15px 0 0;
+  padding: 15px 0;
 }
 .form-conts .form-lable + .form-lable {
  
@@ -811,12 +811,11 @@ top: 56px;
 .form-lable input[type="text"] ,.form-lable input[type="email"] {
   width: 100%;
   color: #111;
-  font-family: 'Pretendard', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: normal;
   padding: 16px 14px;
-  font-family: 'SangSangBodyM';
+  font-family: 'Pretendard', sans-serif;
   border: 1px solid #E2E2E2;
   border-radius: 4px;
   box-sizing: border-box;
