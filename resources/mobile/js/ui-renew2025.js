@@ -20,7 +20,6 @@ $(function(){
 });
 
 $(document).ready(function(){
-  //v1
   $('.allmenu-js').on('click', function(){
     $('.all-menu').addClass('--show');
     $('body').addClass('no-scroll');  // 스크롤 막기

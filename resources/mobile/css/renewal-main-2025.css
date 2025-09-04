@@ -236,17 +236,6 @@ button::-ms-focus-inner {
 .visual.main-new-visual .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin :0; margin-right: 16px;}
 .visual.main-new-visual .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child {margin-right: 0;}
 .visual.main-new-visual .swiper-pagination-bullet { position: relative;width: 336px;height: auto; text-align: left;border-radius: 20px;opacity: 1;margin-right: 20px;background-color: transparent;}
-/*
-.visual.main-new-visual .swiper-pagination-bullet em {font-size: 15px; line-height: 28px;	font-weight: bold;	letter-spacing: -0.38px; color: #111;}
-.visual.main-new-visual .swiper-pagination-bullet i { position: absolute;bottom: 0;left: 0; z-index: 1; width: 100%;height: 3px; background-color: #fff;opacity: 0.2;}
-.visual.main-new-visual .swiper-pagination-bullet b { position: absolute; bottom: 0; left: 0; z-index: 2; width: 0%; height: 3px;background-color: #fff;}
-.visual.main-new-visual .swiper-pagination-bullet-active { background-color: transparent;}
-.visual.main-new-visual .swiper-pagination-bullet-active b {  
-    animation-name: swBar; animation-duration: 5s;animation-timing-function: ease-in;animation-iteration-count: 1;animation-direction: alternate; animation-fill-mode:forwards;
-}
-    swiper-pagination-bullet swiper-pagination-bullet-active
-    .visual.main-new-visual .swiper-pagination-bullet i, .visual.main-new-visual .swiper-pagination-bullet b {}
-*/
 
 .visual.main-new-visual .swiper-pagination-bullet em {font-size: 15px; line-height: 28px;	font-weight: bold;	letter-spacing: -0.38px; color: #fff;}
 .visual.main-new-visual .swiper-pagination-bullet i { position: absolute;bottom: 0;left: 0; z-index: 1; width: 100%;height: 3px; background-color: #fff;opacity: 0.2; display: block;}
@@ -256,23 +245,10 @@ button::-ms-focus-inner {
     animation-name: swBar; animation-duration: 5s;animation-timing-function: ease-in;animation-iteration-count: 1;animation-direction: alternate; animation-fill-mode:forwards;
 }
 
-/*
-.btn_pause {width:16px; height: 20px; position: relative; bottom:0; right:0; z-index: 99; font-size: 0; text-indent: -9999px; margin-left: 18px; cursor: pointer;}
-.btn_pause::before,.btn_pause::after {content: ''; clear: both; display: block; width:6px;height: 20px; background-color: #fff;opacity: 0.8;}
-.btn_pause::before {position: absolute; left:0; top:0;}
-.btn_pause::after {position: absolute; right:0; top:0;}
-.btn_pause.on {width:17px;height: 20px; background: url('../images/main-renewal/btnPlay.png') no-repeat; background-size: 20px auto;}
-.btn_pause.on::before {display: none;}
-.btn_pause.on::after {display: none;}
-*/
-
 .control-area {position: absolute; display: flex;   position: absolute;  bottom:60px; left:16px;  z-index: 11;  height: 2px; justify-content: center; width: calc(100% - 32px); }/*left:90px;*/
 .control-area .sw-pagination { display: flex; justify-content: center; align-items: center;  width: 100%;}
 .visual.main-new-visual .swiper-pagination-bullet {background: #fff;opacity: 0.3; height: 3px; }
-/*
-.visual.main-new-visual .swiper-pagination-bullet i,.visual.main-new-visual .swiper-pagination-bullet b {}
-.visual.main-new-visual .swiper-pagination-bullet-active { background-color: #fff; opacity: 1; display: block;} 
-*/
+
 @keyframes swBar {
     0% {width: 0;}
     100% {width:100%;}
@@ -311,7 +287,6 @@ button::-ms-focus-inner {
         width: 100%;
         height: 3px;
         background-color: rgba(255, 255, 255, .3);
-      /*progress bar 배경*/
     }
     b {
         position: absolute;
@@ -320,17 +295,14 @@ button::-ms-focus-inner {
         z-index: 2;
         width: 0%;
         height: 3px;
-        /*background-color: rgba(17, 17, 17, 1);*/
-        /*background-color: rgba(255, 255, 255, 1);*/
         background-color: rgba(255, 255, 255, 1);
-      /*progress bar 채워지는 부분*/
     }
 }
 .visual .swiper-pagination-bullet-active {
     background-color: transparent;
     b {  
         animation-name: countingBar;
-        animation-duration: 3s;/*autopaly 시간과 맞춰주기*/
+        animation-duration: 3s;
         animation-timing-function: ease-in;
         animation-iteration-count: 1;
         animation-direction: alternate ;
@@ -355,7 +327,7 @@ button::-ms-focus-inner {
   z-index: 10;
 }
 .slide-content h2 {
-  font-family: "KT&G SangSangTitle";
+  font-family:'SangSangTitleB', sans-serif;
   font-size: 38px;
   font-style: normal;
   font-weight: 400;
@@ -402,11 +374,14 @@ button::-ms-focus-inner {
 .title-ty-mb {
   margin-bottom: 26px;
 }
-/*font-family: "KT&G SangSangTitle";*/
+/*font-family: "KT&G SangSangTitle", sans-serif;
+font-family:'SangSangBodyM', sans-serif;
+*/
 .title-ty1 p {
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
+  font-family:'SangSangTitleB', sans-serif;
 }
 .title-ty1 p.color-id-ty1 {
   color: #1CA8E0;
@@ -446,7 +421,7 @@ button::-ms-focus-inner {
   display: block;
   border-radius: 16px;
   border: 1px solid #D9D9D9;
-  background: #F5F5F5;
+  background: #fff;
   padding: 0 0px;
   position: relative;
 }
@@ -501,13 +476,13 @@ button::-ms-focus-inner {
   bottom: 0;
   right:0px;
   z-index: 1;
-  width: 86px;
-  height: 94px;
+  width: 133px;
+  height: 110px;
 }
 
 .ulbox-ty1 .li.n2 > a .text-wrap .btn-bg-a {
-  width: 95px;
-  height: 93px;
+  width: 131px;
+  height: 110px;
   overflow: hidden;
 }
 
@@ -1084,6 +1059,15 @@ background: #D9D9D9;
 }
 
 /*지역별복지센터*/
+.contbox-full-green-ty1 {
+  margin: 0 -16px;
+  background: #EFF8E5 url('../img/main/bg-pattern-green.png') no-repeat 0 0;
+  background-size: cover;
+}
+.contbox-full-green-ty1 .cont_ty1 {
+  width: auto;
+  padding: 64px 16px 60px 16px;
+}
 .welfare-center-list {
   width: 100%;
   display: flex;
@@ -1149,9 +1133,10 @@ background: #D9D9D9;
 .contbox-full-gray-ty3 {
   position: relative;
   /*height: 353px;*/
-  /*background: url('../images/main-renewal/img-bg-boost.png') lightgray -2.655px -65.946px / 100.043% 117.954% no-repeat;*/
+  /*background: url('../img/main/img-bg-boost.png') lightgray -2.655px -65.946px / 100.043% 117.954% no-repeat;*/
   overflow: hidden;
   z-index: 1;
+  margin: 0 -16px;
 }
 .contbox-full-gray-ty3::before {
   content: '';
@@ -1219,6 +1204,7 @@ background: #D9D9D9;
   line-height: normal;
   border-radius: 99px;
   border: 1px solid #FFF;
+  min-width: 136px;
 }
 
 .flex-ty2 {

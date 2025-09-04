@@ -703,3 +703,185 @@ height: calc(100% - 177px);
   padding: 0 0;
   margin: 0 0;
 }
+
+
+
+/* 뉴스레터 */
+/*
+top: 56px;
+  margin-bottom: 56px;
+*/
+.container {
+  position: relative;
+}
+.container.new_container {
+  top: 0px;
+  margin-top: 68px;
+  margin-bottom: 64px;
+}
+.container.new_container .contents_section {
+  padding-bottom: 0px;
+}
+.inner {
+  padding: 0 17px;
+  box-sizing: border-box;
+}
+.h2 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: 'SangSangTitleM';
+  font-size: 28px;
+  color: #000;
+}
+
+.form-conts .h4 {
+  color: #333;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 0;
+}
+
+
+/*h3*/
+.page_tit {
+  width: 100%;
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  font-family: 'SangSangTitleB';
+  font-size: 28px;
+  color: #000;
+  border-bottom: 1px dashed #d4d8de;
+  box-sizing: border-box;
+
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -2px;
+}
+/* form */
+.form-conts {
+  width: 100%;
+}
+.form-conts .li + .li {
+   margin-top: 33px;
+}
+.form-conts .form-lable {
+  padding: 10px 0 0;
+}
+.form-conts .form-lable.first {
+  padding: 15px 0 0;
+}
+.form-conts .form-lable + .form-lable {
+ 
+}
+.form-lable {
+  font-family: 'Pretendard', sans-serif;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 30px;
+}
+.form-lable input[type="radio"],.form-lable  input[type="checkbox"] {position:absolute;z-index:1;width:0;height:0;opacity:0;}
+.form-lable input[type="radio"] + label,
+.form-lable input[type="checkbox"] + label {display:inline-block;position:relative;z-index:1;min-height:20px;padding-left:30px;font-size:15px;color: #333; cursor:pointer;vertical-align:middle;}
+.form-lable input[type="radio"] + label *,
+.form-lable input[type="checkbox"] + label * {line-height:20px;}
+.form-lable input[type="radio"]:first-child + label,
+.form-lable input[type="checkbox"]:first-child + label {margin-left:0;}
+.form-lable input[type="radio"] + label span{display:inline-block;position:absolute;top:1px;left:0;width:20px;height:20px;vertical-align:middle;background:url('../img/form/mo_radio_off.png') no-repeat;background-size:contain;cursor:pointer;}
+.form-lable input[type="checkbox"] + label span{display:inline-block;position:absolute;top:0;left:0;width:20px;height:20px;vertical-align:middle;background:url('../img/form/mo_chk_off.png') no-repeat;background-size:contain;cursor:pointer;}
+.form-lable input[type="radio"]:checked + label span {background:url('../img/form/mo_radio_on.png') no-repeat; background-size:contain;}
+.form-lable input[type="radio"]:disabled + label span {background:url('../img/form/mo_radio_off.png') no-repeat; background-size:contain;}
+.form-lable input[type="checkbox"] + label span {background:url('../img/form/mo_chk_off.png') no-repeat; background-size:contain; }
+.form-lable input[type="checkbox"]:checked + label span {background:url('../img/form/mo_chk_on.png') no-repeat; background-size:contain;}
+.form-lable input[type="checkbox"]:disabled + label span {background:url('../img/form/mo_chk_off.png') no-repeat; background-size:contain;}
+
+.form-lable label .line {
+  border-bottom: 1px solid #111;
+}
+.content_inner .content_wrapper.renewal .page_content input, .content_inner .content_wrapper.renewal .page_content select {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+.form-lable input[type="text"] ,.form-lable input[type="email"] {
+  width: 100%;
+  color: #111;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 16px 14px;
+  font-family: 'SangSangBodyM';
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 6px;
+}
+/* Vendor prefix(브라우저 업체별 접두어) */
+.form-lable .input::-webkit-input-placeholder{
+  color: #999;
+}
+.form-lable .input::-ms-input-placeholder{
+  color: #999;
+}
+.form-lable .input::-moz-placeholder{
+  color: #999;
+}
+
+/* COMMON */
+
+.a-view {
+  color: #666;
+  font-family: 'Pretendard', sans-serif; 
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  display: block;
+}
+
+.li.line-x {
+  border-top:1px solid #D9D9D9;    
+}
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 33px;
+}
+.info-box .form-lable {
+  padding: 0px 0 0 0; 
+}
+.li .info-box .form-lable label {
+  color: #111;
+}
+.btn-application { 
+  display: block;
+  padding: 16px 0px;
+  text-align: center;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  */
+  border-radius: 8px;
+  border: 1px solid #F25D22;
+  max-width: 152px;
+
+  color: #F25D22;
+  font-family: 'Pretendard', sans-serif; 
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 65px auto 0;
+}

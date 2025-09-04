@@ -208,12 +208,11 @@
         <h3>더 좋은 내일을 상상합니다.</h3>
       </div>
       <div class="ulbox-ty1">
-        <div class="li">
+        <div class="li n1">
           <a href="https://m.ktngwelfare.org/m/business/fund">
             <div class="text-wrap">
               <div class="txt-box">
                 <p class="tit-1">의료비지원 신청</p>
-                <!--<p class="txt-1">일상을 지켜주는 가장 기본적인 도</p>-->
               </div>
               <div class="btn-a">
                 <span>
@@ -229,7 +228,6 @@
             <div class="text-wrap">
               <div class="txt-box">
                 <p class="tit-1">학습 · 문화예술지원 신청</p>
-                <!--<p class="txt-1">어린이의 행복과 즐거운 삶을 위한 시작</p>-->
               </div>
               <div class="btn-a">
                 <span>
@@ -402,32 +400,34 @@
       </div><!--//contbox-ty1-->
     </div><!--// contbox-full-gray-ty1-->
 
-    <div class="contbox-ty1 cont_ty1">
-      <div class="flex-ty2 title-ty1-mb">
-        <div class="title-ty1">
-          <p class="color-id-ty3">지역별복지센터</p>
-          <h3>이웃에게 따뜻한 희망을 전합니다.</h3>
+    <div class="contbox-full-green-ty1">
+      <div class="contbox-ty1 cont_ty1">
+        <div class="flex-ty2 title-ty1-mb">
+          <div class="title-ty1">
+            <p class="color-id-ty3">지역별복지센터</p>
+            <h3>이웃에게 따뜻한 희망을 전합니다.</h3>
+          </div>
         </div>
-      </div>
+        
+        <div class="welfare-center-list">
+          <a class="n1" href="https://m.ktngwelfare.org/m/enter/business">
+            <h4>복지센터<br />사업안내</h4>
+            <span><img src="../../../resources/mobile/img/main/img-welfare-link-1.png" alt=""></span>
+          </a>
+          <a class="n2" href="https://m.ktngwelfare.org/m/welfare/center/wnotice">
+            <h4>지역별<br />복지센터</h4>
+            <span><img src="../../../resources/mobile/img/main/img-welfare-link-2.png" alt=""></span>
+          </a>
+        </div><!--/welfare-center-list-->
+        <div class="img-welfare --left">
+          <img src="../../../resources/mobile/img/main/img-welfare-center-left.png" alt="">
+        </div>
+        <div class="img-welfare --right">
+          <img src="../../../resources/mobile/img/main/img-welfare-center-right.png" alt="">
+        </div>
+      </div><!--//contbox-ty1 cont_ty1 -->
+    </div><!--//contbox-full-green-ty1-->
       
-      <div class="welfare-center-list">
-        <a class="n1" href="https://m.ktngwelfare.org/m/enter/business">
-          <h4>복지센터<br />사업안내</h4>
-          <span><img src="../../../resources/mobile/img/main/img-welfare-link-1.png" alt=""></span>
-        </a>
-        <a class="n2" href="https://m.ktngwelfare.org/m/welfare/center/wnotice">
-          <h4>지역별<br />복지센터</h4>
-          <span><img src="../../../resources/mobile/img/main/img-welfare-link-2.png" alt=""></span>
-        </a>
-      </div><!--/welfare-center-list-->
-      <div class="img-welfare --left">
-        <img src="../../../resources/mobile/img/main/img-welfare-center-left.png" alt="">
-      </div>
-      <div class="img-welfare --right">
-        <img src="../../../resources/mobile/img/main/img-welfare-center-right.png" alt="">
-      </div>
-    </div><!--//contbox-ty1 cont_ty1 -->
-
     <div class="contbox-full-gray-ty3">
       <div class="bg-box">
         <img src="../../../resources/mobile/img/main/img-bg-boost.png" alt="">
@@ -572,7 +572,7 @@
   });
   /*
   iframe 요소는 자체적으로 터치 이벤트(스크롤, 드래그)를 가로채 버립니다.
-  그래서 사용자가 화면을 스와이프하면 Swiper에 전달되지 않고, iframe이 먼저 이벤트를 잡아버려 슬라이드가 안 되는 거예요.
+  그래서 사용자가 화면을 스와이프하면 Swiper에 전달되지 않고, iframe이 먼저 이벤트를 잡아버려 슬라이드가 안 된다.
   */
 
   mainSwiper.on('slideChange', function() {
@@ -596,30 +596,32 @@
       players[i] = new YT.Player(iframe);
     });
   }
-
-  //패밀리 사이트
-  $(function() {
-    if ($('.familysite-js').length) {
-      $(".familysite-js .btn_family").click( function( e ){
-        e.preventDefault();
-        if( $(this).parent(".familysite-js").hasClass( "on" ) ){ // 접기        
-            $(this).parent(".familysite-js").removeClass("on");
-            $(".familysite-js > ul").fadeOut(500);
-        }else{
-            $(this).parent(".familysite-js").addClass("on");
-            $(".familysite-js > ul").fadeIn(300);
-        }
-      });
-    }	
-
-    // TOP 버튼 
-    $('.btn-top-js').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: 0 }, 500);
-    });
-  });
   </script>
 
+  <!-- 공통 -->
+  <script>
+    //패밀리 사이트
+    $(function() {
+      if ($('.familysite-js').length) {
+        $(".familysite-js .btn_family").click( function( e ){
+          e.preventDefault();
+          if( $(this).parent(".familysite-js").hasClass( "on" ) ){ // 접기        
+              $(this).parent(".familysite-js").removeClass("on");
+              $(".familysite-js > ul").fadeOut(500);
+          }else{
+              $(this).parent(".familysite-js").addClass("on");
+              $(".familysite-js > ul").fadeIn(300);
+          }
+        });
+      }	
+
+      // TOP 버튼 
+      $('.btn-top-js').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 500);
+      });
+    });
+  </script>
   <!-- 퀵메뉴-->
   <div class="quick-menu">
     <div class="quick-inner">

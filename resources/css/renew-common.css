@@ -739,3 +739,247 @@ footer .familysite-box ul li:last-child a:after{
     background: rgba(0,0,0,0.7);
 }
 
+
+
+
+/*서브 뉴스레터*/
+.content_new_inner {
+  margin: 0 auto;
+  width: 1280px;
+  min-width: 1280px;
+  display: flex;
+}
+.content_new_inner .h3 {
+  color: #111;
+  font-family: 'SangSangTitleB', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #D9D9D9;;
+}
+
+/* 기존 클래스 차용 */
+#container.renewal.new_container {
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 1280px;
+  margin: 0px auto;
+
+  padding-top: 100px;
+}
+
+#container.renewal.new_container #content {
+  overflow: hidden;
+  width: auto;
+  min-width: auto;
+  clear: both;
+}
+.content_inner #lnb_wrap.renewal.new_lnb{
+  padding-top: 0;
+  /*width: 246px;*/
+  width: 320px;
+  height: 100px;
+}
+#container.renewal.new_container #content .content_inner {
+  margin: 0 auto;
+  width: 1280px;
+  min-width: 1280px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-top: 0;
+}
+
+.content_inner .content_wrapper.renewal.new_content_wrapper {
+  margin-left: auto;
+  padding: 0;
+  width: auto;
+}
+
+/*
+.content_inner .content_wrapper.renewal.new_content_wrapper {
+  margin-left: 74px;
+}
+*/
+.content_new_inner .page_tit {
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: initial;
+  font-family: 'SangSangTitleB';
+  font-size: 48px;
+  color: #000;
+  border-bottom: 1px dashed #d4d8de;
+  box-sizing: border-box;
+}
+
+.new_lnb .h3 {
+  color: #111;
+  font-family:'SangSangTitleB', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.content_inner .content_wrapper.renewal.new_content_wrapper .breadcrumb_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.content_inner .content_wrapper.renewal.new_content_wrapper .breadcrumb_wrap .bc_list > li > p {
+  padding-right: 18px;
+  margin-right: 14px;
+  font-size: 14px;
+  color: #868f96;
+  background: url(https://www.ktngwelfare.org/rs/imgs/renew/icon_navi_arrow.png) no-repeat right center / 12px 8px;
+  /*background: url(../imgs/renew/icon_navi_arrow.png) no-repeat right center / 12px 8px;*/
+  cursor: pointer;
+}
+.content_inner .content_wrapper.renewal.new_content_wrapper .breadcrumb_wrap .bc_list > li > p.nonebg {
+  padding-right: 0;
+  background: none;
+}
+
+.content_inner .content_wrapper.renewal.new_content_wrapper .page_content {
+  padding: 80px 0 200px;
+  width: 960px;
+}
+
+.content_wrapper .h4 {
+  color: #333;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 0;
+}
+/* form */
+.form-conts {
+  width: 640px;
+}
+.form-conts .li + .li {
+   margin-top: 48px;
+}
+.form-conts .form-lable {
+  padding: 16px 0;
+}
+.form-conts .form-lable.first {
+  padding: 19px 0;
+}
+.form-conts .form-lable + .form-lable {
+ 
+}
+.form-lable {
+  font-family: 'Pretendard', sans-serif;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 32px;
+}
+.form-lable input[type="radio"],.form-lable  input[type="checkbox"] {position:absolute;z-index:1;width:0;height:0;opacity:0;}
+.form-lable input[type="radio"] + label,
+.form-lable input[type="checkbox"] + label {display:inline-block;position:relative;z-index:1;min-height:24px;padding-left:34px;font-size:20px;color: #333;line-height: normal;cursor:pointer;vertical-align:middle;}
+.form-lable input[type="radio"] + label *,
+.form-lable input[type="checkbox"] + label * {line-height:24px;}
+.form-lable input[type="radio"]:first-child + label,
+.form-lable input[type="checkbox"]:first-child + label {margin-left:0;}
+.form-lable input[type="radio"] + label span{display:inline-block;position:absolute;top:1px;left:0;width:24px;height:24px;vertical-align:middle;background:url('../images/form/btn_radio_off.png') no-repeat;background-size:contain;cursor:pointer;}
+.form-lable input[type="checkbox"] + label span{display:inline-block;position:absolute;top:0;left:0;width:24px;height:24px;vertical-align:middle;background:url('../images/form/btn_chk_off.png') no-repeat;background-size:contain;cursor:pointer;}
+.form-lable input[type="radio"]:checked + label span {background:url('../images/form/btn_radio_on.png') no-repeat; background-size:contain;}
+.form-lable input[type="radio"]:disabled + label span {background:url('../images/form/btn_radio_off.png') no-repeat; background-size:contain;}
+.form-lable input[type="checkbox"] + label span {background:url('../images/form/btn_chk_off.png') no-repeat; background-size:contain; }
+.form-lable input[type="checkbox"]:checked + label span {background:url('../images/form/btn_chk_on.png') no-repeat; background-size:contain;}
+.form-lable input[type="checkbox"]:disabled + label span {background:url('../images/form/btn_chk_off.png') no-repeat; background-size:contain;}
+
+.form-lable label .line {
+  border-bottom: 1px solid #111;
+}
+.content_inner .content_wrapper.renewal .page_content input, .content_inner .content_wrapper.renewal .page_content select {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+.form-lable input[type="text"] ,.form-lable input[type="email"] {
+  width: 100%;
+  color: #111;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 18px 20px;
+  font-family: 'SangSangBodyM';
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 6px;
+}
+/* Vendor prefix(브라우저 업체별 접두어) */
+.form-lable .input::-webkit-input-placeholder{
+  color: #999;
+}
+.form-lable .input::-ms-input-placeholder{
+  color: #999;
+}
+.form-lable .input::-moz-placeholder{
+  color: #999;
+}
+
+/* COMMON */
+
+.a-view {
+  color: #666;
+  font-family: 'Pretendard', sans-serif; 
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  display: block;
+}
+
+.li.line-x {
+  border-top:1px solid #D9D9D9;    
+}
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.info-box .form-lable {
+  padding: 0px 0 0 0; 
+}
+.li .info-box .form-lable label {
+  color: #111;
+}
+.btn-application { 
+  display: block;
+  padding: 22px 0px;
+  text-align: center;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  */
+  border-radius: 8px;
+  border: 1.5px solid #F25D22;
+  max-width: 203px;
+
+  color: #F25D22;
+  font-family: 'Pretendard', sans-serif; 
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 102px auto 0;
+}
